@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Bureau — Confidentialité</title>
+<style>
+  :root {
+    --encre: #1a1714;
+    --papier: #f7f5f0;
+    --sarcelle: #0e7490;
+    --gris: #6b6560;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --encre: #ece9e3;
+      --papier: #14120f;
+      --sarcelle: #67e8f9;
+      --gris: #9a938c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --encre: #ece9e3;
+    --papier: #14120f;
+    --sarcelle: #67e8f9;
+    --gris: #9a938c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 16px 72px;
+    background: var(--papier);
+    color: var(--encre);
+    font: 17px/1.65 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 .25em; }
+  .date { color: var(--gris); font-style: italic; margin: 0 0 2.5em; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .5em; }
+  a { color: var(--sarcelle); }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+  footer {
+    margin-top: 3.5em; padding-top: 1.5em;
+    border-top: 1px solid color-mix(in srgb, var(--gris) 35%, transparent);
+    color: var(--gris); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Le Bureau — mise à jour du 24 septembre 2026</p>
+
+  <p>Le Bureau est un outil privé, développé et utilisé par Arnaud Minatchy pour lui seul.
+  Il n'a pas d'autres utilisateurs, ne collecte rien auprès de tiers, et ne poursuit aucune
+  finalité commerciale ou publicitaire.</p>
+
+  <h2>Les données auxquelles l'application accède</h2>
+  <p>Avec mon autorisation, elle accède à mes propres boîtes Gmail : l'objet, l'expéditeur
+  et le contenu des messages reçus. Elle peut y écrire des brouillons de réponse et y poser
+  une étiquette sur les messages déjà traités.</p>
+  <p>Elle n'envoie aucun message, ne supprime rien, et n'accède à aucune boîte qui ne
+  m'appartient pas.</p>
+
+  <h2>Où ces données vont</h2>
+  <ul>
+    <li><strong>Sur mon ordinateur.</strong> L'automatisation tourne localement, dans une
+    instance n8n qui m'appartient.</li>
+    <li><strong>Dans ma base Airtable privée.</strong> Les éléments retenus — une idée, une
+    tâche, un contact — y sont rangés. Cette base n'est partagée avec personne.</li>
+    <li><strong>Chez Anthropic.</strong> Le contenu d'un message est envoyé à l'API de Claude
+    pour être classé et pour rédiger un brouillon. C'est le seul service extérieur en jeu.
+    Anthropic n'utilise pas ces données pour entraîner ses modèles dans le cadre de ses
+    conditions d'utilisation de l'API.</li>
+  </ul>
+  <p>Aucune autre transmission. Aucune vente, aucun partage, aucune publicité, aucune
+  mesure d'audience, aucun cookie sur ces pages.</p>
+
+  <h2>Durée de conservation</h2>
+  <p>Les éléments rangés dans ma base Airtable y restent tant qu'ils me sont utiles, et je
+  les supprime moi-même. L'historique technique des automatisations est purgé
+  automatiquement au bout de quelques semaines.</p>
+
+  <h2>Retirer l'autorisation</h2>
+  <p>Je peux révoquer à tout moment l'accès de l'application à mes boîtes Gmail depuis la
+  page <a href="https://myaccount.google.com/permissions">Applications ayant accès à mon
+  compte</a> de mon compte Google. L'application cesse alors immédiatement de lire quoi que
+  ce soit.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question sur cette page ou sur l'application :
+  <a href="mailto:arnaud.minatchy@gmail.com">arnaud.minatchy@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Retour à l'accueil</a>
+  </footer>
+</main>
+</body>
+</html>

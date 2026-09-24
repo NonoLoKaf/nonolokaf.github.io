@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Bureau</title>
+<style>
+  :root {
+    --encre: #1a1714;
+    --papier: #f7f5f0;
+    --sarcelle: #0e7490;
+    --gris: #6b6560;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --encre: #ece9e3;
+      --papier: #14120f;
+      --sarcelle: #67e8f9;
+      --gris: #9a938c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --encre: #ece9e3;
+    --papier: #14120f;
+    --sarcelle: #67e8f9;
+    --gris: #9a938c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 16px 72px;
+    background: var(--papier);
+    color: var(--encre);
+    font: 17px/1.65 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .25em; letter-spacing: -.01em; }
+  .sous-titre { color: var(--gris); font-style: italic; margin: 0 0 2.5em; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .5em; }
+  a { color: var(--sarcelle); }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+  footer {
+    margin-top: 3.5em; padding-top: 1.5em;
+    border-top: 1px solid color-mix(in srgb, var(--gris) 35%, transparent);
+    color: var(--gris); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Le Bureau</h1>
+  <p class="sous-titre">Un assistant personnel, pour une seule personne.</p>
+
+  <p>Le Bureau est un outil que je développe pour mon usage privé. Il range ma boîte
+  de réception, tient à jour mes projets et mes tâches, et me prépare chaque matin un
+  résumé de ce qui m'attend.</p>
+
+  <p>Il n'est pas commercialisé, ne s'installe pas, et n'a pas d'utilisateurs en dehors
+  de moi. Il tourne sur mon ordinateur.</p>
+
+  <h2>Ce qu'il fait de mes mails</h2>
+  <ul>
+    <li>Il les lit pour les classer : une idée, une tâche, une opportunité, une publicité.</li>
+    <li>Il prépare des brouillons de réponse, que je relis et que j'envoie moi-même.</li>
+    <li>Il pose une étiquette sur ce qu'il a déjà traité, pour ne pas le refaire.</li>
+  </ul>
+  <p>Il n'envoie jamais un message à ma place, et ne supprime rien.</p>
+
+  <h2>Pourquoi cette page existe</h2>
+  <p>Google demande une page d'accueil et une politique de confidentialité à toute
+  application qui accède à Gmail, même une application privée qui ne sert qu'à son auteur.
+  La voici donc, et elle dit simplement les choses.</p>
+
+  <p><a href="confidentialite.html">Politique de confidentialité</a></p>
+
+  <footer>
+    Arnaud Minatchy — projet personnel, sans finalité commerciale.<br>
+    Contact : <a href="mailto:arnaud.minatchy@gmail.com">arnaud.minatchy@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
