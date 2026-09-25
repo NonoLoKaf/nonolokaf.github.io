@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Bureau — Conditions</title>
+<style>
+  :root {
+    --encre: #1a1714;
+    --papier: #f7f5f0;
+    --sarcelle: #0e7490;
+    --gris: #6b6560;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --encre: #ece9e3;
+      --papier: #14120f;
+      --sarcelle: #67e8f9;
+      --gris: #9a938c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --encre: #ece9e3;
+    --papier: #14120f;
+    --sarcelle: #67e8f9;
+    --gris: #9a938c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 16px 72px;
+    background: var(--papier);
+    color: var(--encre);
+    font: 17px/1.65 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 .25em; }
+  .date { color: var(--gris); font-style: italic; margin: 0 0 2.5em; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .5em; }
+  a { color: var(--sarcelle); }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+  footer {
+    margin-top: 3.5em; padding-top: 1.5em;
+    border-top: 1px solid color-mix(in srgb, var(--gris) 35%, transparent);
+    color: var(--gris); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Conditions d'utilisation</h1>
+  <p class="date">Le Bureau — version du 25 septembre 2026</p>
+
+  <p>Le Bureau est un outil privé, développé et utilisé par Arnaud Minatchy pour lui seul.
+  Ces conditions existent parce que certaines plateformes les exigent de toute application
+  qui se connecte à leurs services. Elles décrivent simplement ce qu'est l'outil.</p>
+
+  <h2>Qui peut l'utiliser</h2>
+  <p>Personne d'autre que moi. Le Bureau ne propose aucun service au public : pas
+  d'inscription, pas de compte, pas d'accès extérieur. Il tourne sur mon ordinateur et ne
+  se connecte qu'à mes propres comptes.</p>
+
+  <h2>Ce qu'il fait</h2>
+  <p>Il m'aide à organiser mon travail (courriels, tâches, projets) et publie, à ma demande
+  et après ma validation, mes propres vidéos sur mes comptes de réseaux sociaux. Il ne
+  publie rien de lui-même.</p>
+
+  <h2>Les services tiers</h2>
+  <p>Quand Le Bureau se connecte à Instagram, Facebook, YouTube ou TikTok, il le fait dans le
+  respect des conditions de chacune de ces plateformes, qui continuent de s'appliquer à mes
+  comptes et à mes publications. Je reste seul responsable du contenu que je publie.</p>
+
+  <h2>Données personnelles</h2>
+  <p>Ce que l'outil lit, où les données vont et comment retirer un accès : tout est décrit
+  dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+
+  <h2>Sans garantie</h2>
+  <p>Le Bureau est un projet personnel, fourni tel quel, sans finalité commerciale ni
+  garantie de fonctionnement.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question :
+  <a href="mailto:arnaud.minatchy@gmail.com">arnaud.minatchy@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Retour à l'accueil</a>
+  </footer>
+</main>
+</body>
+</html>
